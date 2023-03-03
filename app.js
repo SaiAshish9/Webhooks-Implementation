@@ -1,9 +1,9 @@
-const express = require('express');
-const bodyParser = require('body-parser');
-const mongoose = require("mongoose");
-const { schoolModel } = require('../student_data/models/schoolModel');
-const { studentModel } = require('../student_data/models/studentModel');
-const axios = require('axios');
+const express = require('express').
+      bodyParser = require('body-parser'),
+      mongoose = require("mongoose"),
+      { schoolModel } = require('../student_data/models/schoolModel'),
+      { studentModel } = require('../student_data/models/studentModel'),
+      axios = require('axios');
 
 const app = express();
 const PORT = 3100;
@@ -17,7 +17,7 @@ app.get('/', (_, res) => {
 });
 
 app.post('/registerSchool', async (req, res) => {
-    let data = req.body;
+    const data = req.body;
     const index = await schoolModel.find().count();
     const schoolDetails = new schoolModel({
         schoolName: data.schoolName,
@@ -25,14 +25,13 @@ app.post('/registerSchool', async (req, res) => {
 
     });
     let schoolData = await schoolDetails.save();
-
     res.send({
         result: schoolData
     });
 });
 
 app.post('/addWebhookEvent', async (req, res) => {
-    let data = req.body;
+    const data = req.body;
     let schoolDetails = await schoolModel.findOne({ "schoolId": data.schoolId });
     if (schoolDetails) {
         if (schoolDetails.webhookDetails == null) {
@@ -48,10 +47,8 @@ app.post('/addWebhookEvent', async (req, res) => {
             returnOriginal: false
         })
     } else {
-        console.log(" NO school")
+        console.log("NO school")
     }
-
-
     res.send({
         result: schoolDetails
     });
