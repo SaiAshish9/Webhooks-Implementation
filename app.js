@@ -1,8 +1,7 @@
 const express = require('express').
       bodyParser = require('body-parser'),
       mongoose = require("mongoose"),
-      { schoolModel } = require('../student_data/models/schoolModel'),
-      { studentModel } = require('../student_data/models/studentModel'),
+      { schoolModel, studentModel } = require('../student_data/models');
       axios = require('axios');
 
 const app = express();
@@ -81,7 +80,6 @@ app.post('/addStudent', async (req, res) => {
     } else {
         console.log(" NO school")
     }
-
     res.send({
         result: "added succesfully: " + studentData.name
     });
