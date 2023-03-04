@@ -5,6 +5,4 @@ https://1da8-49-37-170-172.in.ngrok.io/api/webhook
 
 <img width="1003" alt="Screenshot 2023-03-04 at 4 16 58 PM" src="https://user-images.githubusercontent.com/43849911/222895675-eb211bfb-28f7-46e9-a462-d1f6a6328d14.png">
 
-<img width="1161" alt="Screenshot 2023-03-04 at 4 19 22 PM" src="https://user-images.githubusercontent.com/43849911/222895800-6c540060-3680-46e6-a2d1-bc9f153576af.png">
-
-<img width="1160" alt="Screenshot 2023-03-04 at 4 20 18 PM" src="https://user-images.githubusercontent.com/43849911/222895824-91176886-3136-47f1-8dd2-547243883125.png">
+<img width="1139" alt="Screenshot 2023-03-04 at 4 23 08 PM" src="https://user-images.githubusercontent.com/43849911/222895933-faf10a74-08bd-4ff0-b404-8b239f0bfcff.png">
