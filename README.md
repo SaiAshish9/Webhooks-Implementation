@@ -19,5 +19,5 @@ https://1da8-49-37-170-172.in.ngrok.io/api/webhook
 
 
 ```
-When any student is added , corresponding webhook url will be called if its present at database.
+When any student is added , corresponding webhook url of school will be called if its present at database.
 ```
